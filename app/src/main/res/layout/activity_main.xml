@@ -26,9 +26,41 @@
         android:textAlignment="center"
         android:padding="10dp"
         android:textSize="20sp"
+        android:id="@+id/words"
         android:textColor="#000"
+        android:layout_marginTop="20dp"
         android:gravity="center_horizontal">
 
     </TextView>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mic_icon"
+            android:id="@+id/say"
+            android:layout_weight="1"
+            android:contentDescription="@string/contentdesc">
+
+        </ImageView>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/speaker_icon"
+            android:id="@+id/listen"
+            android:layout_weight="1"
+            android:contentDescription="@string/contentdesc">
+
+        </ImageView>
+
+    </LinearLayout>
 
 </RelativeLayout>
